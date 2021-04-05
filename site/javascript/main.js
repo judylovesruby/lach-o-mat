@@ -1,25 +1,52 @@
 fetch('javascript/jokes.json')
-  .then(response => response.json())
-  .then(allJokes => showRandomJoke(allJokes['de']))
+    .then(response => response.json())
+    .then(allJokes => {
+        saveJokes(allJokes);
+        showRandomJoke();
+    })
 
-function showRandomJoke(jokes) {
-  let newJoke = getRandomJoke(jokes)
-  let formattedJoke = formatJoke(newJoke)
-  showJoke(formattedJoke)
+function saveJokes(jokes) {
+    window.jokes = jokes;
 }
 
-function getRandomJoke(jokes) {
-  let index = Math.floor(Math.random() * jokes.length)
-  return jokes[index]
+function showRandomJoke() {
+    let newJoke = getRandomJoke();
+    let formattedJoke = formatJoke(newJoke);
+    showJoke(formattedJoke);
+}
+
+function getRandomJoke() {
+    let jokes = getJokes();
+    let index = Math.floor(Math.random() * jokes.length);
+    return jokes[index];
+}
+
+function getJokes() {
+    let allJokes = window.jokes
+    if (typeof allJokes === 'undefined') {
+        console.log('Could not read jokes!');
+        return [];
+    }
+    // So far the site only shows german jokes.
+    // Maybe there will be options for other languages later.
+    if (typeof allJokes["de"] === 'undefined') {
+        console.log('Could not read german jokes!', allJokes);
+        return [];
+    }
+    return allJokes["de"];
 }
 
 function formatJoke(joke) {
-  let formattedJoke = joke.replace(/\n/g, "<br />")
-  return formattedJoke
+    if (typeof joke === 'undefined') {
+        console.log('Could not format joke!');
+        return '';
+    }
+    let formattedJoke = joke.replace(/\n/g, "<br />");
+    return formattedJoke;
 }
 
 function showJoke(joke) {
-  document.querySelector('.joke--text p').innerHTML = joke
+    document.querySelector('.joke--text p').innerHTML = joke;
 }
 
 
