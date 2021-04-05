@@ -1,5 +1,6 @@
 body {
   background-color: #7d72b9;
+  margin: 0;
 }
 .joke {
   display: flex;
