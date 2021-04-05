@@ -2,12 +2,19 @@ fetch('javascript/jokes.json')
     .then(response => response.json())
     .then(allJokes => {
         saveJokes(allJokes);
-        // wait for the DOM to load?!
-        showRandomJoke();
-        initializeButton();
+        if ( document.readyState === "complete" ) {
+            preparePage()
+        } else {
+            document.addEventListener('DOMContentLoaded', preparePage);
+        }
     })
 
 function saveJokes(jokes) {
+function preparePage() {
+    showRandomJoke();
+    initializeButton();
+}
+
     window.jokes = jokes;
 }
 
