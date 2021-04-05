@@ -2,7 +2,9 @@ fetch('javascript/jokes.json')
     .then(response => response.json())
     .then(allJokes => {
         saveJokes(allJokes);
+        // wait for the DOM to load?!
         showRandomJoke();
+        initializeButton();
     })
 
 function saveJokes(jokes) {
@@ -49,4 +51,6 @@ function showJoke(joke) {
     document.querySelector('.joke--text p').innerHTML = joke;
 }
 
-
+function initializeButton() {
+    document.querySelector('.reload').addEventListener('click', showRandomJoke);
+}
