@@ -1,7 +1,7 @@
 fetch('javascript/jokes.json')
     .then(response => response.json())
     .then(allJokes => {
-        saveJokes(allJokes);
+        storeJokes(allJokes);
         if ( document.readyState === "complete" ) {
             preparePage()
         } else {
@@ -9,12 +9,12 @@ fetch('javascript/jokes.json')
         }
     })
 
-function saveJokes(jokes) {
 function preparePage() {
     showRandomJoke();
     initializeButton();
 }
 
+function storeJokes(jokes) {
     window.jokes = jokes;
 }
 
