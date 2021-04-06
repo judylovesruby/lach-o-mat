@@ -2,10 +2,10 @@ fetch('javascript/jokes.json')
     .then(response => response.json())
     .then(allJokes => {
         storeJokes(allJokes);
-        if ( document.readyState === "complete" ) {
-            preparePage()
-        } else {
+        if (document.readyState === "loading") {
             document.addEventListener('DOMContentLoaded', preparePage);
+        } else {
+            preparePage()
         }
     })
 
