@@ -1,7 +1,26 @@
+
+:root {
+  --bg-color: #333366;
+  --text-color: #CC9966;
+  --text-highlight-color: FFCC99;
+  --link-color: #99CC66;
+  --link-hover-color: #669933;
+  // Palette: https://paletton.com/#uid=34h100kllllaFw0g0qFqFg0w0aF
+}
+
 body {
-  background-color: #7d72b9;
+  background-color: var(--bg-color);
   margin: 0;
   font-size: 30px;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover, a:focus {
+  color: var(--link-hover-color);
 }
 
 .layout {
@@ -28,6 +47,7 @@ body {
 .joke--text {
   padding: 30px;
   text-align: center;
+  color: var(--text-highlight-color);
 }
 
 .footer--hint {
