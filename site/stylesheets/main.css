@@ -11,14 +11,14 @@
 body {
   background-color: var(--bg-color);
   margin: 0;
-  font-size: 30px;
+  font-size: 36px;
   color: var(--text-color);
+  font-family: 'Barriecito';
 }
 
 a {
   color: var(--link-color);
 }
-
 a:hover, a:focus {
   color: var(--link-hover-color);
 }
