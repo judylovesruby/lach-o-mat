@@ -37,6 +37,8 @@ a:hover, a:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: baseline;
+  padding: 10px;
 }
 
 .joke {
