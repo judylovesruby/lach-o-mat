@@ -11,4 +11,4 @@ You need a local file server. Which one you choose should make no difference. [H
 
 I'm using python's `http.server`:
 
-Run `cd site && python3 -m http.server 3000` to start it. Then use your browser to navigate to `localhost:3000`
+Run `cd docs && python3 -m http.server 3000` to start it. Then use your browser to navigate to `localhost:3000`
