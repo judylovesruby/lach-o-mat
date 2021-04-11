@@ -1,6 +1,7 @@
 :root {
   --large-font-size: 36px;
   --small-font-size: calc(var(--large-font-size) / 2);
+  --padding: 15px;
   --bg-color: #333366;
   --text-color: #CC9966;
   --text-highlight-color: FFCC99;
@@ -30,6 +31,11 @@ a:hover, a:focus {
   align-content: space-between;
   min-height: 100vh;
 }
+.layout--header {
+  grid-row: header;
+  text-align: center;
+  padding-top: var(--padding);
+}
 .layout--content {
   grid-row: content;
 }
@@ -40,7 +46,7 @@ a:hover, a:focus {
   justify-content: space-around;
   flex-direction: row-reverse;
   align-items: baseline;
-  padding: 10px;
+  padding: var(--padding);
 }
 
 .joke {

@@ -59,5 +59,8 @@ function showJoke(joke) {
 }
 
 function initializeButton() {
-    document.querySelector('.reload').addEventListener('click', showRandomJoke);
+    let links = document.querySelectorAll('.reload')
+    for (let link of links) {
+      link.addEventListener('click', showRandomJoke);
+    }
 }
