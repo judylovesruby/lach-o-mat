@@ -10,7 +10,7 @@ fetch('javascript/jokes.json')
     })
 
 function preparePage() {
-    showRandomJoke();
+    reloadActions();  
     initializeButton();
 }
 
@@ -58,9 +58,25 @@ function showJoke(joke) {
     document.querySelector('.joke--text p').innerHTML = joke;
 }
 
+function reloadActions() {
+    showRandomJoke(); 
+    runAnimation();
+}
+
+function runAnimation() {
+    let animatedElement = document.querySelector('.animation--anchor');
+    animatedElement.classList.add('animation--action');
+    setTimeout(removeAnimation, 1000);
+}
+
+function removeAnimation() {
+    let animatedElement = document.querySelector('.animation--action');
+    animatedElement.classList.remove('animation--action');
+}
+
 function initializeButton() {
     let links = document.querySelectorAll('.reload')
     for (let link of links) {
-      link.addEventListener('click', showRandomJoke);
+        link.addEventListener('click', reloadActions);
     }
 }

@@ -20,6 +20,7 @@ body {
 
 a {
   color: var(--link-color);
+  text-decoration: none;
 }
 a:hover, a:focus {
   color: var(--link-hover-color);
@@ -47,6 +48,23 @@ a:hover, a:focus {
   flex-direction: row-reverse;
   align-items: baseline;
   padding: var(--padding);
+}
+
+.animation--action {
+  position: absolute;
+  animation: spin 1000ms ease-out infinite;
+}
+@keyframes spin {
+  100% { transform: rotate(710deg); }
+} 
+
+.logo--middle {
+  transform: rotate(10deg);
+  position: absolute;
+}
+
+.logo--end {
+  margin-left: 55px;
 }
 
 .joke {
