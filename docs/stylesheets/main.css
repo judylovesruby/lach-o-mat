@@ -58,6 +58,9 @@ a:hover, a:focus {
   100% { transform: rotate(710deg); }
 } 
 
+.logo {
+  height: 65px;
+} 
 .logo--middle {
   transform: rotate(10deg);
   position: absolute;
