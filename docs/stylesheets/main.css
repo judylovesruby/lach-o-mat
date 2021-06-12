@@ -52,11 +52,20 @@ a:hover, a:focus {
 
 .animation--action {
   position: absolute;
-  animation: spin 1000ms ease-out infinite;
+  animation: spin 1000ms ease-out 1, noop 300ms linear 1;
+  animation-fill-mode: forwards;
 }
 @keyframes spin {
-  100% { transform: rotate(710deg); }
+  100% { transform: rotate(720deg); }
 } 
+
+@keyframes noop {
+  // nothing to do! :)
+}
+
+@keyframes drop {
+  100% { transform: rotate(20deg); }
+}
 
 .logo {
   height: 65px;

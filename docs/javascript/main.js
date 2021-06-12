@@ -66,7 +66,7 @@ function reloadActions() {
 function runAnimation() {
     let animatedElement = document.querySelector('.animation--anchor');
     animatedElement.classList.add('animation--action');
-    setTimeout(removeAnimation, 1000);
+    setTimeout(removeAnimation, 1300);
 }
 
 function removeAnimation() {
