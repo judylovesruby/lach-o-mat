@@ -10,6 +10,11 @@
   // Palette: https://paletton.com/#uid=34h100kllllaFw0g0qFqFg0w0aF
 }
 
+@font-face {
+  font-family: 'Barriecito';
+  src: url('/assets/fonts/Barriecito-Regular.ttf');
+}
+
 body {
   background-color: var(--bg-color);
   margin: 0;
