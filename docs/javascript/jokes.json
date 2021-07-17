@@ -35,7 +35,7 @@
     "Warum summen Bienen?\n-\nWeil sie den Text nicht kennen!",
     "Treffen sich zwei Magnete. Sagt der eine: \"Was soll ich heute bloß anziehen?\"",
     "Wieso können Skelette schlecht lügen?\n-\nWeil sie so gut zu durchschauen sind.",
-    "Wo macht ein Skelett Urlaub?\nAntwort: Am Toten Meer.",
+    "Wo macht ein Skelett Urlaub?\n-\nAm Toten Meer.",
     "Kommt ein Skelett zum Arzt. Sagt der Arzt: „Sie sind aber spät dran!“",
     "Geht ein Neutron in eine Disco. Sagt der Türsteher: \"Hier kommen heute nur geladene Gäste rein!\"",
     "Wissenschaftler haben herausgefunden...\nund sind dann wieder reingegangen.",
@@ -80,10 +80,26 @@
     "Warum verwechseln Informatiker Weihnachten und Halloween?\n-\nWeil Oct31 = Dec 25",
     "Warum können Piraten keinen Kreis berechnen?\n-\nWeil sie Pi raten!",
     "Was macht ein Mathematiker im Garten?\n-\nWurzeln ziehen.",
-    "Zwei Mathematiker am Gartengrill: \"Ist schon gebratenes λ?\"\n\"Nein, das φ ist noch ρ.\""
+    "Zwei Mathematiker am Gartengrill: \"Ist schon gebratenes λ?\"\n\"Nein, das φ ist noch ρ.\"",
+    "Wie fängt ein Mathematiker in der Steppe einen Löwen?\n-\nEr baut sich einen Käfig, setzt sich hinein und definiert: \"Hier ist außen!\"",
+    "Warum sind bei IKEA Pfeile am Boden?\n-\nEs ist ein Einrichtungshaus.",
+    "Warum gehen Ameisen nicht in die Kirche?\n-\nSie sind InSekten!",
+    "Wieso steht ein Pils im Wald?\n-\nWeil die Tannen zapfen!",
+    "Was ist grün, glücklich und hüpft von Grashalm zu Grashalm?\n-\nEine Freuschrecke.",
+    "Was ist ein Keks unterm Baum?\n-\nEin schattiges Plätzchen.",
+    "\"Klugscheißer mag niemand\"\n-\n\"Fast niemand!\"",
+    "\"Mein Computer ist kaputt, er schreibt nur noch Großbuchstaben!\"\n\"Hast du die Feststelltaste gedrückt?\"\n\"Nein, das hab ich selbst herausgefunden.\"",
+    "Wenn in einem Hühnerstall alle Hennen mit einem Laserschwert getötet werden ist der Hahn solo.",
+    "Deutsch ist eine einfache Sprache.\nWenn etwas auf der Straße liegt hat man zwei Möglichkeiten:\n1. Das Objekt umfahren\n2. Das Objekt umfahren",
+    "Kind zum Vater: \"Ich bin hungrig!\"\nAntwortet der Vater: \"Hallo Hungrig, ich bin dein Vater:\""
   ],
   "en": [
     "A QA engineer walks into a bar.\nOrders a beer.\nOrders 2 beers.\nOrders 0 beers.\nOrders 1e30 beers.\n\nFirst real customer walks in and asks where the bathroom is. The bar bursts into flames, killing everyone.",
-    "An SQL query goes into a bar, walks up to two tables and asks: \"can I join you?\""
+    "An SQL query goes into a bar, walks up to two tables and asks: \"can I join you?\"",
+    "Kid to father: \"I'm hungry!\"\nFather: \"Hi Hungry, I'm Dad!\"",
+    "Why did the functions stop calling each other?\n-\nbecause they had constant arguments!",
+    "Knock. Knock\nA concurrency bug!\nWho is it?",
+    "What is the longest word in the english language?\n-\n\"smiles\" because there's a mile between the s's.",
+    "When a computer overheats, it freezes."
   ]
 }
